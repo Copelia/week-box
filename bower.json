@@ -3,7 +3,9 @@
   "description": "week box para tabla centro masajes",
   "main": "week-box.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^2.0.0"
+    "polymer": "Polymer/polymer#^2.0.0",
+    "paper-input": "@polymer/paper-input#2.0-preview",
+    "paper-checkbox": "@polymer/paper-checkbox#2.0-preview"
   },
   "devDependencies": {
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",

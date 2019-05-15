@@ -1,13 +1,53 @@
 <link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../paper-checkbox/paper-checkbox.html">
 
 <dom-module id="week-box">
   <template>
     <style>
-      :host {
-        display: block;
-      }
+    .clsLista {
+      list-style:none;
+    }
+
+    .clsListaItem2 {
+      display:inline-block;
+      padding-left: 5px;
+      width:50px;
+    }
     </style>
-    <h2>Hello [[prop1]]!</h2>
+
+        <div>
+          <ul class="clsLista">
+            <li class="clsListaItem2">
+                <label>Lu/Mo</label>
+                <paper-checkbox></paper-checkbox>
+            </li>
+            <li class="clsListaItem2">
+                <label>Ma/Tu</label>
+                <paper-checkbox></paper-checkbox>
+            </li>
+            <li class="clsListaItem2">
+                <label>Mi/We</label>
+                <paper-checkbox></paper-checkbox>
+            </li>
+            <li class="clsListaItem2">
+                <label>Ju/Th</label>
+                <paper-checkbox></paper-checkbox>
+            </li>
+            <li class="clsListaItem2">
+                <label>Vi/Fr</label>
+                <paper-checkbox></paper-checkbox>
+            </li>
+            <li class="clsListaItem2">
+                <label>Sa/Sa</label>
+                <paper-checkbox></paper-checkbox>
+            </li>
+            <li class="clsListaItem2">
+                <label>Do/Su</label>
+                <paper-checkbox></paper-checkbox>
+            </li>      
+          </ul>
+        </div>
+
   </template>
 
   <script>
@@ -23,10 +63,6 @@
       static get is() { return 'week-box'; }
       static get properties() {
         return {
-          prop1: {
-            type: String,
-            value: 'week-box'
-          }
         };
       }
     }
